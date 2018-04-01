@@ -156,7 +156,7 @@ async def guardian(pass_context=True):
     await bot.say(embed=embed) 
     
 @bot.command()
-async def guardian(pass_context=True):
+async def dragonguardian(pass_context=True):
     embed = discord.Embed(title="AQ3D Dragon Guardian", description="You have answered the call of the Dragon Guardian! Your passion and might are unmatched!", color=0x00ff00)
     embed.set_thumbnail(url = "https://thumb.ibb.co/dofBx7/Dragon_Guardian.png")
     await bot.say(embed=embed) 
