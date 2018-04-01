@@ -80,11 +80,6 @@ async def on_member_remove(member):
     await bot.send_message(channel, fmt.format(member, member.server))   
 
 @bot.command(pass_context=True)
-async def website(ctx):
-    embed = embed.discord.Embed(title="The official Vell website is located at: www.jdcoding7.wixsite.com/vellbot", description="Leave a comment!", colorr=0x00a0ea)
-    embed.set_thumbnail(url= "https://thumb.ibb.co/c1yBAS/icon.jpg") 
-    await bot.say(embed=embed)
-@bot.command(pass_context=True)
 async def help(ctx):
     
     embed = discord.Embed(title="Vell Bot Help Menu", description="Here you will find all the help you need. Not satisfied? Type join.supportserver, to join our Official Support Server.", color=0x00a0ea)
@@ -143,7 +138,12 @@ if __name__ == "__main__":
    print('Failed to load extension {}\n{}'.format(extension, exc))
   
 
-
+@client.event
+async def on_message(message):
+    if message.content.startswith('v.alphaknight'):
+        embed = discord.Embed(title="AQ3D Alpha Knight", description="Participated in the Alpha Test. A knight from the days of old... before AdventureQuest 3D was even a game..", color=0x00ff00)
+        embed.set_thumbnail(url = "https://thumb.ibb.co/bSkVPn/Alpha_Knight.png")
+        await client.send_message(message.channel, embed=embed)
   
   
 
