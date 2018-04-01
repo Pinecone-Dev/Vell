@@ -138,12 +138,11 @@ if __name__ == "__main__":
    print('Failed to load extension {}\n{}'.format(extension, exc))
   
 
-@client.event
-async def on_message(message):
-    if message.content.startswith('v.alphaknight'):
-        embed = discord.Embed(title="AQ3D Alpha Knight", description="Participated in the Alpha Test. A knight from the days of old... before AdventureQuest 3D was even a game..", color=0x00ff00)
-        embed.set_thumbnail(url = "https://thumb.ibb.co/bSkVPn/Alpha_Knight.png")
-        await client.send_message(message.channel, embed=embed)
+@bot.command()
+async def alphaknight(pass_context=True):
+    embed = discord.Embed(title="AQ3D Alpha Knight", description="Participated in the Alpha Test. A knight from the days of old... before AdventureQuest 3D was even a game..", color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/bSkVPn/Alpha_Knight.png")
+    await bot.say(embed=embed)
   
   
 
