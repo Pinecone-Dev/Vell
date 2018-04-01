@@ -143,9 +143,43 @@ async def alphaknight(pass_context=True):
     embed = discord.Embed(title="AQ3D Alpha Knight", description="Participated in the Alpha Test. A knight from the days of old... before AdventureQuest 3D was even a game..", color=0x00ff00)
     embed.set_thumbnail(url = "https://thumb.ibb.co/bSkVPn/Alpha_Knight.png")
     await bot.say(embed=embed)
-  
-  
-
+@bot.command()
+async def closedbeta(pass_context=True):
+    embed = discord.Embed(title="AQ3D Closed Beta", description="Awarded to all players who took part in the closed beta of AdventureQuest 3D.", color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/mvzX4n/Closed_Beta.png")
+    await bot.say(embed=embed)  
+ 
+@bot.command()
+async def guardian(pass_context=True):
+    embed = discord.Embed(title="AQ3D Guardian", description="Guardian of AdventureQuest 3D! Will include Guardian Class, access to the Guardian tower and special guardian quests & perks.", color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/dYeoc7/Guardian.png")
+    await bot.say(embed=embed) 
+    
+@bot.command()
+async def guardian(pass_context=True):
+    embed = discord.Embed(title="AQ3D Dragon Guardian", description="You have answered the call of the Dragon Guardian! Your passion and might are unmatched!", color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/dofBx7/Dragon_Guardian.png")
+    await bot.say(embed=embed) 
+@bot.command()
+async def prebeta(pass_context=True):
+    embed = discord.Embed(title="AQ3D Pre Beta", description="Awarded to every hero who had a character during AQ3D's Pre-Beta testing phase!", color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/facrx7/Pre_Beta.png")
+    await bot.say(embed=embed) 
+@bot.command()
+async def backer(pass_context=True):
+    embed = discord.Embed(title="AQ3D Backer", description="\"I've got your back!\" Backed the AdventureQuest 3D project on Kickstarter.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/naDQPn/backer.png")
+    await bot.say(embed=embed)     
+@bot.command()
+async def badgeslist():
+    await bot.say("```Alpha Knight```")
+    await bot.say("```Closed Beta```")
+    await bot.say("```Guardian```")
+    await bot.say("```Dragon Guardian```")
+    await bot.say("Processing...")
+    await bot.say("```Pre beta```")
+    await bot.say("```Backer```")
+    await bot.say("Type v.badgename to get more info about the badge!")
 token = os.environ.get("TOKEN")
 bot.run(f'{token}')
 
