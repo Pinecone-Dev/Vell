@@ -179,7 +179,7 @@ async def badgeslist():
     await bot.say("Processing...")
     await bot.say("```Pre beta```")
     await bot.say("```Backer```")
-    await bot.say("Type v.badgename to get more info about the badge!")
+    await bot.say("Type v.\"badgename\" to get more info about the badge!")
 token = os.environ.get("TOKEN")
 bot.run(f'{token}')
 
