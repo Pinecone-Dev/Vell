@@ -80,7 +80,12 @@ async def on_member_remove(member):
     fmt = '{0.mention} has left/been kicked/banned from the server.'
     channel = member.server.get_channel("429774341152964618")
     await bot.send_message(channel, fmt.format(member, member.server))   
-
+@bot.event
+async def on_member_join(member):
+    server = member.server.default_channel
+    fmt = 'Hey! {0.mention} Welcome to {1.name} you\'re now part of Talented\'s development team!'
+    channel = member.server.get_channel("430384042211278879")
+    await bot.send_message(channel, fmt.format(member, member.server))
 @bot.command(pass_context=True)
 async def help(ctx):
     
