@@ -254,12 +254,32 @@ async def calendar2017(pass_context=True):
     embed.set_thumbnail(url = "https://image.ibb.co/c6mc4n/2017calendar.jpg")
     await bot.say(embed=embed)
 @bot.command()
+async def riverstone(pass_context=True):
+    embed = discord.Embed(title="River Stone", description="You are like a smooth stone pulled from a river… all your hard edges worn away by time and experience leaving only perfected form.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/itaOAS/River_Stone.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def burningmanchallenge(pass_context=True):
+    embed = discord.Embed(title="Burning Man Challenge", description="You have been to the secret battle area of the Burning Man and left unburned.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/b31Kjn/The_Unburned.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def littledread(pass_context=True):
+    embed = discord.Embed(title="Little Dread Bested", description="You faced Little Dread Riding Hood in single combat near her lodge in Darkovia Forest and proven that you're not a Lycan. At least… not yet.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/kmAjH7/Dreadly_Serious.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def firezillachallenge(pass_context=True):
+    embed = discord.Embed(title="Firezilla Challenge", description="You have gone to the lair of the giant monster known as Firezilla and you didn't even need a giant mech.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/mMToc7/Kaiju_Killer.jpg")
+    await bot.say(embed=embed)
+@bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     embed.add_field(name="Badges (Loyalty)".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer ~ Founder ~ Epic Founder ~ Legendary Founder ~ Determined ~")
     embed.add_field(name="Badges (Special)".format("null"), value="Undersworn T-shirt ~ Dage Collection 2018 ~ Zorbak Blue Moglin Plush Hat ~ 2018 Calendar ~ Eternal Chronomancer ~ Frostval Collector 2017 ~ Contest Swimsuit Edition 2016 ~ April Fools Day ~ Legion Pledge Scroll ~ AE 2017 Calendar ~ AQ3D Logo T-shirt ~")
-    embed.add_field(name="Badges (Lore)".format("null"), value="N/A")
+    embed.add_field(name="Badges (Lore)".format("null"), value="Little Dread Bested ~ Firezilla Challenge ~ Burning Man Challenge ~ River Stone ~")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 
