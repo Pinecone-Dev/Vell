@@ -96,7 +96,7 @@ async def help(ctx):
     embed.set_footer(text="Vell Bot ~ Developed by Alphi#5113")
     await bot.say(embed=embed)
 @bot.command(pass_context=True)
-async def badgeslist(ctx):
+async def badgeslisthelp(ctx):
     embed = discord.Embed(title="Info for the <badgeslist> command", description="Displays the badges from the AQ3D game.", color=0x00a0ea)
     await bot.say(embed=embed)
 @bot.command(pass_context=True)
