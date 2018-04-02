@@ -172,12 +172,16 @@ async def backer(pass_context=True):
     await bot.say(embed=embed)     
 @bot.command(pass_context=True)
 async def badgeslist():
-    await bot.say("```Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer```")
-    await bot.say("```Type v.\"badgename\" to get more info about the badge!```")
-    embed= discord.Embed(title="More badges..", description="This are the badges I have uploaded for now, more will be coming soon!", color==0x00ff00)
+    embed = discord.Embed(title="More badges..", description="This are the badges I have uploaded for now, more will be coming soon!", color==0x00ff00)
     embed.set_thumbnail(url= "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png") #imgbb uploaded
     await bot.say(embed=embed)
-    
+    await bot.say("```Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer```")
+    await bot.say("```Type v.\"badgename\" to get more info about the badge!```")
+
+
+
+
+
 token = os.environ.get("TOKEN")    
 bot.run(f'{token}')
 
