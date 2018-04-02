@@ -177,7 +177,7 @@ async def help(ctx):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
-     await bot.say(embed=embed
+    await bot.say(embed=embed)
 
 token = os.environ.get("TOKEN")    
 bot.run(f'{token}')
