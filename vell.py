@@ -184,6 +184,16 @@ async def undersworn(pass_context=True):
     embed.set_thumbnail(url = "https://thumb.ibb.co/bMbtun/Undersworn.png")
     await bot.say(embed=embed)
 @bot.command()
+async def dagecollector2018(pass_context=True):
+    embed = discord.Embed(title="Dage's Collector 2018", description="You have purchased Dage's entire 2018 Dage Collection! Visit Melodia to access your undead items at any time! For the Legion!",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/dQLmEn/Dage_Collection1.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def undeadtshirt(pass_context=True):
+    embed = discord.Embed(title="Undead Legion T-shirt", description="Let the world know that you are one of the mighty. FOR THE LEGION!",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/i37u0S/Legion_Legend.png")
+    await bot.say(embed=embed)
+@bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
