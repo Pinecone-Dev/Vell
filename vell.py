@@ -47,7 +47,7 @@ async def hello(ctx):
 async def kick(ctx, user:discord.Member, *, reason:str=None):
     """Kicks someone from the server"""
     if reason is None:
-        reason = "The ban hammer has spoken. :ban:"
+        reason = "{0.mention} has felt the wrath of the boot :boot:"
         try:
             await bot.kick(user)
         except discord.errors.Forbidden:
@@ -93,7 +93,7 @@ async def help(ctx):
     embed.add_field(name="Commands Help".format("null"), value=command_help, inline=False)
     embed.add_field(name="Moderator Commands".format("null"), value=mod_commands, inline=False)
     embed.add_field(name="Adventure Quest 3D".format("null"), value=ae_commands, inline=False)
-    embed.set_footer(text="Vell Bot ~ Developed by Alphi#5113")
+    embed.set_footer(text="Vell Bot ~ Developed by Alphi#5113 & Bread#7656")
     await bot.say(embed=embed)
 @bot.command(pass_context=True)
 async def badgeslisthelp(ctx):
@@ -214,10 +214,30 @@ async def legionpledgescroll(pass_context=True):
     embed.set_thumbnail(url = "https://image.ibb.co/n3C2LS/Worthy_Soul.png")
     await bot.say(embed=embed)
 @bot.command()
+async def aprilfoolsday(pass_context=True):
+    embed = discord.Embed(title="April Fools Day", description="Visited the Dricken Cave during April Fools Day",color=0x00ff00)
+    embed.set_thumbnail(url = "")
+    await bot.say(embed=embed)
+@bot.command()
+async def founder(pass_context=True):
+    embed = discord.Embed(title="Founder", description="Founder of AdventureQuest 3D. Grants Early Access to Beta game releases.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/mFMVqS/founder.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def epicfounder(pass_context=True):
+    embed = discord.Embed(title="Epic Founder", description="Epic Founder of AdventureQuest 3D. Grants Early Access to AQ3D as well as other in-game perks detailed on the AQ3D Kickstarter!",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/hUzdc7/epicfounder.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def legendaryfounder(pass_context=True):
+    embed = discord.Embed(title="Legendary Founder", description="Legendary Founder of AdventureQuest (Not live yet. In development) Also includes pre-order pack of Paladin, DragonSlayer, Necromancer and Ninja classes and early access to them!!",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/ndk1x7/legendaryfounder.jpg")
+    await bot.say(embed=embed)
+@bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
-    embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer ~ Undersworn T-Shirt ~ Dage Collection 2018 ~ Zorbak Blue Moglin Plush Hat ~ 2018 Calendar - Eternal Chronomancer ~ Frostval Collector 2017 ~ Legion Pledge Scroll ~")
+    embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer ~ Undersworn T-Shirt ~ Dage Collection 2018 ~ Zorbak Blue Moglin Plush Hat ~ 2018 Calendar - Eternal Chronomancer ~ Frostval Collector 2017 ~ Legion Pledge Scroll ~ April Fools Day ~ Founder ~ Epic Founder ~ Legendary Founder ~")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 
