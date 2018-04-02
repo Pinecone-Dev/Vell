@@ -194,7 +194,7 @@ async def undeadlegiontshirt(pass_context=True):
     embed.set_thumbnail(url = "https://image.ibb.co/i37u0S/Legion_Legend.png")
     await bot.say(embed=embed)
 @bot.command()
-async def zorbakbluemoglinplushhat(pass_context=True):
+async def bluemoglinplushhat(pass_context=True):
     embed = discord.Embed(title="Zorbak Blue Moglin Plush Hat", description="The blue moglin ears on your head hear nothing but the ebil that surrounds you. *sigh* No, that's not a typo.",color=0x00ff00)
     embed.set_thumbnail(url = "https://image.ibb.co/iPVmEn/PureEbil.png")
     await bot.say(embed=embed)
@@ -204,7 +204,7 @@ async def frostvalcollector2017(pass_context=True):
     embed.set_thumbnail(url = "https://image.ibb.co/j7L8S7/Frostval_Collection2017.jpg")
     await bot.say(embed=embed)
 @bot.command()
-async def 2018calendareternalchronomancer(pass_context=True):
+async def calendar2018(pass_context=True):
     embed = discord.Embed(title="2018 Calendar - Eternal Chronomancer", description="Shop unlocked with the purchase of the AE 2018 Calendar. ",color=0x00ff00)
     embed.set_thumbnail(url = "https://image.ibb.co/n0xcLS/Eternal_Chronomancer.jpg")
     await bot.say(embed=embed)
