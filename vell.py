@@ -180,7 +180,7 @@ async def backer(pass_context=True):
     await bot.say(embed=embed)     
 @bot.command()
 async def undersworn(pass_context=True):
-    embed = discord.Embed(title="Undersworn T-Shirt", description=""You have spoken the oath in Undertongue. You are of the Undead Legion now and forever.",color=0x00ff00)
+    embed = discord.Embed(title="Undersworn T-Shirt", description="You have spoken the oath in Undertongue. You are of the Undead Legion now and forever.",color=0x00ff00)
     embed.set_thumbnail(url = "https://thumb.ibb.co/bMbtun/Undersworn.png")
     await bot.say(embed=embed)
 @bot.command()
