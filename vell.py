@@ -22,6 +22,8 @@ global music_commands
 music_commands = ["In progress, not available yet..."]
 global mod_commands
 mod_commands = ["emoji", "text", "nsfw", "kick"]
+global ae_commands
+ae_commands = ["badgeslist"]
 bot = commands.Bot(command_prefix=prefix)
 bot.remove_command("help")
 
@@ -88,11 +90,15 @@ async def help(ctx):
     embed.set_thumbnail(url = "https://thumb.ibb.co/c1yBAS/icon.jpg")
     embed.add_field(name="Miscellaneous Commands".format("null"), value=misc_commands, inline=False)
     embed.add_field(name="Music Commands".format("null"), value=music_commands, inline=False)
-    embed.add_field(name="Commands Help".format("null"), value=command_help)
-    embed.add_field(name="Moderator Commands".format("null"), value=mod_commands)
+    embed.add_field(name="Commands Help".format("null"), value=command_help, inline=False)
+    embed.add_field(name="Moderator Commands".format("null"), value=mod_commands, inline=False)
+    embed.add_field(name="Adventure Quest 3D".format("null"), value=ae_commands, inline=False)
     embed.set_footer(text="Vell Bot ~ Developed by Alphi#5113")
     await bot.say(embed=embed)
-
+@bot.command(pass_context=True)
+async def badgeslist(ctx):
+    embed = discord.Embed(title="Info for the <badgeslist> command", description="Displays the badges from the AQ3D game.", color=0x00a0ea)
+    await bot.say(embed=embed)
 @bot.command(pass_context=True)
 async def betahelp(ctx):
     embed = discord.Embed(title="Info for the <beta> command", description="Beta command displays a text..", color=0x00a0ea)
@@ -173,8 +179,8 @@ async def backer(pass_context=True):
 #https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png
 @bot.command()
 async def badgeslist(pass_context=True):
-    embed.set_thumbnail("https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
+    embed.set_thumbnail("https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
