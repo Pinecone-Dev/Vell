@@ -1,4 +1,4 @@
-#Vell Bot v0.1  -------  Test rep, THIS IS NOT THE MAIN REP, IT IS PRIVATE!
+#Vell Bot v0.1 
 import os
 import youtube_dl
 
