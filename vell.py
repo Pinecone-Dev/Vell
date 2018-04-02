@@ -97,7 +97,9 @@ async def help(ctx):
     await bot.say(embed=embed)
 @bot.command(pass_context=True)
 async def badgeslisthelp(ctx):
+    
     embed = discord.Embed(title="Info for the <badgeslist> command", description="Displays the badges from the AQ3D game.", color=0x00a0ea)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     await bot.say(embed=embed)
 @bot.command(pass_context=True)
 async def betahelp(ctx):
@@ -180,7 +182,7 @@ async def backer(pass_context=True):
 @bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
-    embed.set_thumbnail("https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
+    embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
