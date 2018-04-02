@@ -170,8 +170,8 @@ async def backer(pass_context=True):
     embed = discord.Embed(title="AQ3D Backer", description="\"I've got your back!\" Backed the AdventureQuest 3D project on Kickstarter.",color=0x00ff00)
     embed.set_thumbnail(url = "https://thumb.ibb.co/naDQPn/backer.png")
     await bot.say(embed=embed)     
-@bot.command(pass_context=True)
-async def badgeslist():
+@bot.command()
+async def badgeslist(pass_context=True):
     embed = discord.Embed(title="More badges..", description="This are the badges I have uploaded for now, more will be coming soon!", color==0x00ff00)
     embed.set_thumbnail(url= "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png") #imgbb uploaded
     await bot.say(embed=embed)
