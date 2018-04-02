@@ -234,10 +234,32 @@ async def legendaryfounder(pass_context=True):
     embed.set_thumbnail(url = "https://image.ibb.co/ndk1x7/legendaryfounder.jpg")
     await bot.say(embed=embed)
 @bot.command()
+async def swimsuitcontest2016(pass_context=True):
+    embed = discord.Embed(title="Contest Swimsuit Edition 2016", description="Winner of the 2016 Artix Entertainment Swimsuit Art Contest",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/ejB8c7/contestswim2016.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def determined(pass_context=True):
+    embed = discord.Embed(title="Determined", description="Awarded to those who managed to cross the impossibly large gap to level 15 in the Open Beta, before levels were normalized.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/nEgYc7/determined15.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def aq3dtlogoshirt(pass_context=True):
+    embed = discord.Embed(title="AQ3D Logo T-shirt", description="Purchased AQ3D Logo T-Shirt from Heromart",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/kSvbx7/aq3dlogoteeshirt.jpg")
+    await bot.say(embed=embed)
+@bot.command()
+async def calendar2017(pass_context=True):
+    embed = discord.Embed(title="AE 2017 Calendar", description="Purchased the Artix Entertainment 2017 Calendar",color=0x00ff00)
+    embed.set_thumbnail(url = "https://image.ibb.co/c6mc4n/2017calendar.jpg")
+    await bot.say(embed=embed)
+@bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.set_thumbnail(url = "https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
-    embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer ~ Undersworn T-Shirt ~ Dage Collection 2018 ~ Zorbak Blue Moglin Plush Hat ~ 2018 Calendar - Eternal Chronomancer ~ Frostval Collector 2017 ~ Legion Pledge Scroll ~ April Fools Day ~ Founder ~ Epic Founder ~ Legendary Founder ~")
+    embed.add_field(name="Badges (Loyalty)".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer ~ Founder ~ Epic Founder ~ Legendary Founder ~ Determined ~")
+    embed.add_field(name="Badges (Special)".format("null"), value="Undersworn T-shirt ~ Dage Collection 2018 ~ Zorbak Blue Moglin Plush Hat ~ 2018 Calendar ~ Eternal Chronomancer ~ Frostval Collector 2017 ~ Contest Swimsuit Edition 2016 ~ April Fools Day ~ Legion Pledge Scroll ~ AE 2017 Calendar ~ AQ3D Logo T-shirt ~")
+    embed.add_field(name="Badges (Lore)".format("null"), value="N/A")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 
