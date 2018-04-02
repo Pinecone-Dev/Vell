@@ -178,7 +178,11 @@ async def backer(pass_context=True):
     embed = discord.Embed(title="AQ3D Backer", description="\"I've got your back!\" Backed the AdventureQuest 3D project on Kickstarter.",color=0x00ff00)
     embed.set_thumbnail(url = "https://thumb.ibb.co/naDQPn/backer.png")
     await bot.say(embed=embed)     
-#https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png
+@bot.command()
+async def undersworn(pass_context=True):
+    embed = discord.Embed(title="Undersworn T-Shirt", description=""You have spoken the oath in Undertongue. You are of the Undead Legion now and forever.",color=0x00ff00)
+    embed.set_thumbnail(url = "https://thumb.ibb.co/bMbtun/Undersworn.png")
+    await bot.say(embed=embed)
 @bot.command()
 async def badgeslist(pass_context=True):
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
