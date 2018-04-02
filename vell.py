@@ -171,8 +171,8 @@ async def backer(pass_context=True):
     embed.set_thumbnail(url = "https://thumb.ibb.co/naDQPn/backer.png")
     await bot.say(embed=embed)     
 #https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png
-@bot.command(pass_context=True)
-async def help(ctx):
+@bot.command()
+async def badgeslist(pass_context=True):
     embed.set_thumbnail("https://thumb.ibb.co/euN8un/AQ3_D_Logo_T_shirt.png")
     embed = discord.Embed(title="Badges List", description="Here you will find all the badges from AQ3D (Still in development)", color=0x00a0ea)
     embed.add_field(name="Badges".format("null"), value="Alpha Knight ~ Closed Beta ~ Guardian ~ Dragon Guardian ~ Pre Beta ~ Backer")
