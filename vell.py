@@ -288,6 +288,6 @@ async def badgeslist(pass_context=True):
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 
-token = os.environ.get("TOKEN")    
+token = os.environ.get("mybot")    
 bot.run(f'{token}')
 
