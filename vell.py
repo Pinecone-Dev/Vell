@@ -78,7 +78,7 @@ async def on_member_remove(member):
     fmt = '{0.mention} has left/been kicked/banned from the server.'
     channel = member.server.get_channel("429774341152964618")
     await bot.send_message(channel, fmt.format(member, member.server))   
-@bot.command()
+@bot.command(pass_context=True)
 async def help(ctx):
     
     embed = discord.Embed(title="Vell Bot Help Menu", description="Here you will find all the help you need. Not satisfied? Type join.supportserver, to join our Official Support Server.", color=0x00a0ea)
