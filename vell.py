@@ -285,7 +285,7 @@ import random as r
 hello = ["Hello", "Hey", "Hi"]
 @bot.command()
 async def hello():
-    await bot say(r.choice(hello))
+    await bot say("hello there :wave:")
 token = os.environ.get("mybot")    
 bot.run(f'{token}')
 
