@@ -280,7 +280,7 @@ async def badgeslist(pass_context=True):
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 @bot.command()
-asyn def hello():
+async def hello():
     await bot.say("Hi :wave:")
 bot.run(f'{token}')
 
