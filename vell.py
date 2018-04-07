@@ -283,6 +283,6 @@ async def badgeslist(pass_context=True):
 async def hello():
     await bot.say("Hi :wave:")
     
-token = os.environ.get("TOKEN")
+token = os.environ.get("mybot")
 bot.run(f'{token}')
 
