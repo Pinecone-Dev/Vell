@@ -279,11 +279,8 @@ async def badgeslist(pass_context=True):
     embed.add_field(name="Badges (Lore)".format("null"), value="Little Dread Bested ~ Firezilla Challenge ~ Burning Man Challenge ~ River Stone ~")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
-import random as r
-hello = ["Hello", "Hey", "Hi :wave:"]
 @bot.command()
-async def hello():
-    await bot.say(r.choice(hello))
-token = os.environ.get("mybot")    
+asyn def hello():
+    await bot.say("Hi :wave:")
 bot.run(f'{token}')
 
