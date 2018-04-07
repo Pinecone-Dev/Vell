@@ -80,7 +80,7 @@ async def on_member_remove(member):
     fmt = '{0.mention} has left/been kicked/banned from the server.'
     channel = member.server.get_channel("429774341152964618")
     await bot.send_message(channel, fmt.format(member, member.server))   
-
+@bot.command()
 async def help(ctx):
     
     embed = discord.Embed(title="Vell Bot Help Menu", description="Here you will find all the help you need. Not satisfied? Type join.supportserver, to join our Official Support Server.", color=0x00a0ea)
@@ -281,7 +281,11 @@ async def badgeslist(pass_context=True):
     embed.add_field(name="Badges (Lore)".format("null"), value="Little Dread Bested ~ Firezilla Challenge ~ Burning Man Challenge ~ River Stone ~")
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
-
+import random as r
+hello = ["Hello", "Hey", "Hi"]
+@bot.command()
+async def hello():
+    await bot say(r.choice(hello))
 token = os.environ.get("mybot")    
 bot.run(f'{token}')
 
