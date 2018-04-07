@@ -39,9 +39,7 @@ class Main_Commands():
   
 
   
-@bot.command(pass_context=True)
-async def hello(ctx):
-    await bot.say("Hey there! :wave:")
+
 
 @bot.command(pass_context=True)
 async def kick(ctx, user:discord.Member, *, reason:str=None):
