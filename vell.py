@@ -282,10 +282,10 @@ async def badgeslist(pass_context=True):
     embed.add_field(name="Important!".format("null"), value="Type v.\"badgename\" for more details. name must be lowercase and cannot contain spaces, example: v.alphaknight.")
     await bot.say(embed=embed)
 import random as r
-hello = ["Hello", "Hey", "Hi"]
+hello = ["Hello", "Hey", "Hi :wave:"]
 @bot.command()
 async def hello():
-    await bot say("hello there :wave:")
+    await bot.say(r.choice(hello))
 token = os.environ.get("mybot")    
 bot.run(f'{token}')
 
