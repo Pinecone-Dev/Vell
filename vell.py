@@ -68,7 +68,7 @@ async def ban(ctx, user:discord.Member, *, reason:str=None):
 @bot.event
 async def on_member_join(member):
     server = member.server.default_channel
-    fmt = 'Hey! {0.mention} Welcome to {1.name} the official support server for Vell Bot, any issues? Talk to us!'
+    fmt = 'Hey! {0.mention} Welcome to {1.name} the official support server for bots developed by Alphi, any issues? Talk to us!'
     channel = member.server.get_channel("410605613354319872")
     await bot.send_message(channel, fmt.format(member, member.server))
 
