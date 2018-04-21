@@ -1,1 +1,9 @@
-# Beta phase of the Vell Discord bot. (Wanna contribute?) Option will be available soon!
+Vell Bot!
+Features
+-Music Streaming
+-Basic Moderator commands
+-Welcome/Leave Messages
+Artix Entertainment Features
+-Character Lookup
+-Item Lookup
+-Badges Description
