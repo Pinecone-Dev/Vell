@@ -1,7 +1,7 @@
 #Vell Bot v0.1 
 import os
 import youtube_dl
-
+import bs4
 # CONFIG
 # --------- #
 prefix = ["v.", "join.", "mod."]
@@ -282,6 +282,34 @@ async def badgeslist(pass_context=True):
 @bot.command()
 async def hello():
     await bot.say("Hi :wave:")
+    
+    
+#https://game.aq3d.com/account/Character
+response = requests.get('https://game.aq3d.com/account/Character')        
+soup = bs4.BeautifulSoup(response.text)
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 token = os.environ.get("mybot")
 bot.run(f'{token}')
