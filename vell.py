@@ -285,8 +285,9 @@ async def hello():
     
     
 #https://game.aq3d.com/account/Character
-response = requests.get('https://game.aq3d.com/account/Character')        
-soup = bs4.BeautifulSoup(response.text)
+@bot.command()
+async def echo(*, message: str):
+    await bot.say(message)
   
     
     
