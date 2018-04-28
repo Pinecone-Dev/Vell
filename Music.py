@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 try:
     if not discord.opus.is_loaded():
-        discord.opus.load_opus('libopus-0.dll')
+        discord.opus.load_opus('opuslib.dll')
 except OSError:  # Incorrect bitness
     opus = False
 except:  # Missing opus
