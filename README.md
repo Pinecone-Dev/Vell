@@ -7,3 +7,4 @@ Artix Entertainment Features
 -Character Lookup
 -Item Lookup
 -Badges Description
+
